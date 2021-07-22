@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CameraUploadCollectionViewCell" id="gTV-IL-0wX" customClass="CameraUploadCollectionViewCell" customModule="Green_Receipts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="126" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZd-AL-lvg">
+                        <rect key="frame" x="0.0" y="0.0" width="126" height="118"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5IO-zx-IiQ">
+                                <rect key="frame" x="4" y="4" width="118" height="110"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5IO-zx-IiQ" firstAttribute="leading" secondItem="sZd-AL-lvg" secondAttribute="leading" constant="4" id="d4a-b9-kL7"/>
+                            <constraint firstItem="5IO-zx-IiQ" firstAttribute="top" secondItem="sZd-AL-lvg" secondAttribute="top" constant="4" id="mdS-OI-gYK"/>
+                            <constraint firstAttribute="bottom" secondItem="5IO-zx-IiQ" secondAttribute="bottom" constant="4" id="r3s-jK-wqV"/>
+                            <constraint firstAttribute="trailing" secondItem="5IO-zx-IiQ" secondAttribute="trailing" constant="4" id="wtn-ML-rHI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sZd-AL-lvg" secondAttribute="trailing" id="cM3-Nb-O8K"/>
+                <constraint firstItem="sZd-AL-lvg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="flW-dK-309"/>
+                <constraint firstItem="sZd-AL-lvg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="htc-cc-XhL"/>
+                <constraint firstAttribute="bottom" secondItem="sZd-AL-lvg" secondAttribute="bottom" id="rui-82-Qg0"/>
+            </constraints>
+            <size key="customSize" width="126" height="118"/>
+            <connections>
+                <outlet property="containerView" destination="sZd-AL-lvg" id="gIT-UA-FXj"/>
+                <outlet property="uploadImageView" destination="5IO-zx-IiQ" id="Mv4-uS-ggu"/>
+            </connections>
+            <point key="canvasLocation" x="195.6521739130435" y="94.419642857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

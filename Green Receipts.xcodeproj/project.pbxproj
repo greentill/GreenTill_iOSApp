@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5207452925825ABB00436BDF /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207452725825ABB00436BDF /* UserProfileViewController.swift */; };
+		5207452A25825ABB00436BDF /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5207452825825ABB00436BDF /* UserProfileViewController.xib */; };
+		520D8273261EDE5B002CCF93 /* UserCameraUploadedBillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520D8272261EDE5B002CCF93 /* UserCameraUploadedBillModel.swift */; };
+		520D8276261EEDCB002CCF93 /* CameraUploadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520D8274261EEDCB002CCF93 /* CameraUploadCollectionViewCell.swift */; };
+		520D8277261EEDCB002CCF93 /* CameraUploadCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520D8275261EEDCB002CCF93 /* CameraUploadCollectionViewCell.xib */; };
+		521134202568F8E7006C6D6F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5211341F2568F8E7006C6D6F /* CustomTextField.swift */; };
+		521A689E257F5770007CEDA4 /* UserLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A689D257F5770007CEDA4 /* UserLoginModel.swift */; };
+		521A68A3257F795C007CEDA4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 521A68A2257F795C007CEDA4 /* MBProgressHUD.m */; };
+		521A68A5257F8298007CEDA4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A68A4257F8298007CEDA4 /* UserDefaultsManager.swift */; };
+		521A68A7257F8F7C007CEDA4 /* RegisterUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A68A6257F8F7C007CEDA4 /* RegisterUserModel.swift */; };
+		5226BA4A25D000F700D2CD2F /* UserBillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226BA4925D000F700D2CD2F /* UserBillModel.swift */; };
+		5226BA4C25D009CA00D2CD2F /* UserLatestBillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226BA4B25D009CA00D2CD2F /* UserLatestBillModel.swift */; };
+		522A587A255ACAC300DAF0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A5879255ACAC300DAF0CC /* AppDelegate.swift */; };
+		522A5881255ACAC300DAF0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522A587F255ACAC300DAF0CC /* Main.storyboard */; };
+		522A5883255ACAC700DAF0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522A5882255ACAC700DAF0CC /* Assets.xcassets */; };
+		522A5886255ACAC700DAF0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522A5884255ACAC700DAF0CC /* LaunchScreen.storyboard */; };
+		522A5890255ACC2200DAF0CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A588E255ACC2200DAF0CC /* HomeViewController.swift */; };
+		522A5891255ACC2200DAF0CC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522A588F255ACC2200DAF0CC /* HomeViewController.xib */; };
+		522A5894255ACD1E00DAF0CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A5892255ACD1E00DAF0CC /* LoginViewController.swift */; };
+		522A5895255ACD1E00DAF0CC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522A5893255ACD1E00DAF0CC /* LoginViewController.xib */; };
+		523A20892569619200903D7A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A20872569619200903D7A /* RegistrationViewController.swift */; };
+		523A208A2569619200903D7A /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A20882569619200903D7A /* RegistrationViewController.xib */; };
+		523A762C2563AA5400246FBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A762A2563AA5400246FBE /* BaseViewController.swift */; };
+		523A762D2563AA5400246FBE /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A762B2563AA5400246FBE /* BaseViewController.xib */; };
+		523A76302563AC4400246FBE /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A762E2563AC4400246FBE /* ForgotPasswordViewController.swift */; };
+		523A76312563AC4400246FBE /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A762F2563AC4400246FBE /* ForgotPasswordViewController.xib */; };
+		523B2DCB259C57D7006FD875 /* CameraRollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B2DC9259C57D7006FD875 /* CameraRollViewController.swift */; };
+		523B2DCC259C57D7006FD875 /* CameraRollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523B2DCA259C57D7006FD875 /* CameraRollViewController.xib */; };
+		523BA229259C8926006B9A46 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BA227259C8926006B9A46 /* CategoryCollectionViewCell.swift */; };
+		523BA22A259C8926006B9A46 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523BA228259C8926006B9A46 /* CategoryCollectionViewCell.xib */; };
+		523D98B5261F37FF004613FE /* FullImagePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D98B3261F37FF004613FE /* FullImagePopUpViewController.swift */; };
+		523D98B6261F37FF004613FE /* FullImagePopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523D98B4261F37FF004613FE /* FullImagePopUpViewController.xib */; };
+		523DE2F626232BA400F92141 /* ReceiptListByShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523DE2F426232BA400F92141 /* ReceiptListByShopViewController.swift */; };
+		523DE2F726232BA400F92141 /* ReceiptListByShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523DE2F526232BA400F92141 /* ReceiptListByShopViewController.xib */; };
+		523E833A259075DD002D0608 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8338259075DD002D0608 /* LibraryCell.swift */; };
+		523E833B259075DD002D0608 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523E8339259075DD002D0608 /* LibraryCell.xib */; };
+		523F7851262AC10D00D9B842 /* FullImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F784F262AC10D00D9B842 /* FullImageViewController.swift */; };
+		523F7852262AC10D00D9B842 /* FullImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523F7850262AC10D00D9B842 /* FullImageViewController.xib */; };
+		523F7855262AD40A00D9B842 /* SaveQRImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F7853262AD40A00D9B842 /* SaveQRImageViewController.swift */; };
+		523F7856262AD40A00D9B842 /* SaveQRImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523F7854262AD40A00D9B842 /* SaveQRImageViewController.xib */; };
+		52433C482561726B00C949D3 /* cavoliniregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52433C462561726B00C949D3 /* cavoliniregular.ttf */; };
+		52433C492561726B00C949D3 /* cavolinibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52433C472561726B00C949D3 /* cavolinibold.ttf */; };
+		524472EE267D22BD00735F53 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524472EC267D22BD00735F53 /* ResetPasswordViewController.swift */; };
+		524472EF267D22BD00735F53 /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524472ED267D22BD00735F53 /* ResetPasswordViewController.xib */; };
+		524EF7C52622CAC500B9232F /* QRInfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EF7C42622CAC500B9232F /* QRInfoDataModel.swift */; };
+		52C78B8226063DD40030973A /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C78B8026063DD40030973A /* QRCodeScannerViewController.swift */; };
+		52C78B8326063DD40030973A /* QRCodeScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C78B8126063DD40030973A /* QRCodeScannerViewController.xib */; };
+		52CE837125CE778E008DC1E9 /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CE837025CE778E008DC1E9 /* UserProfileModel.swift */; };
+		52DB213F2620943800E03418 /* CameraRollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB213D2620943800E03418 /* CameraRollTableViewCell.swift */; };
+		52DB21402620943800E03418 /* CameraRollTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DB213E2620943800E03418 /* CameraRollTableViewCell.xib */; };
+		52DEBD262576770400725008 /* WebserviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBD252576770400725008 /* WebserviceManager.swift */; };
+		52DEBD282576771A00725008 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DEBD272576771A00725008 /* ServiceFactory.swift */; };
+		52E30FC3255BE8AD00E915D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E30FC2255BE8AD00E915D3 /* Constants.swift */; };
+		52E30FC7255BE97E00E915D3 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E30FC6255BE97E00E915D3 /* CommonUtility.swift */; };
+		52E8DB842647F77600FF41EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52E8DB832647F77600FF41EF /* GoogleService-Info.plist */; };
+		52EF2D8E2583955A00168431 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF2D8C2583955A00168431 /* ChangePasswordViewController.swift */; };
+		52EF2D8F2583955A00168431 /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EF2D8D2583955A00168431 /* ChangePasswordViewController.xib */; };
+		88E15147A1244CF2A87B8214 /* Pods_Green_Receipts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3879C9817518C0E6C47EF0D4 /* Pods_Green_Receipts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3879C9817518C0E6C47EF0D4 /* Pods_Green_Receipts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Green_Receipts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5207452725825ABB00436BDF /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		5207452825825ABB00436BDF /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		520D8272261EDE5B002CCF93 /* UserCameraUploadedBillModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCameraUploadedBillModel.swift; sourceTree = "<group>"; };
+		520D8274261EEDCB002CCF93 /* CameraUploadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraUploadCollectionViewCell.swift; sourceTree = "<group>"; };
+		520D8275261EEDCB002CCF93 /* CameraUploadCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraUploadCollectionViewCell.xib; sourceTree = "<group>"; };
+		5211341F2568F8E7006C6D6F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		521A689D257F5770007CEDA4 /* UserLoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginModel.swift; sourceTree = "<group>"; };
+		521A68A0257F795C007CEDA4 /* Green Receipts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Green Receipts-Bridging-Header.h"; sourceTree = "<group>"; };
+		521A68A1257F795C007CEDA4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		521A68A2257F795C007CEDA4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		521A68A4257F8298007CEDA4 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		521A68A6257F8F7C007CEDA4 /* RegisterUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserModel.swift; sourceTree = "<group>"; };
+		5226BA4925D000F700D2CD2F /* UserBillModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBillModel.swift; sourceTree = "<group>"; };
+		5226BA4B25D009CA00D2CD2F /* UserLatestBillModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLatestBillModel.swift; sourceTree = "<group>"; };
+		522A5876255ACAC300DAF0CC /* Green Receipts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Green Receipts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		522A5879255ACAC300DAF0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		522A5880255ACAC300DAF0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		522A5882255ACAC700DAF0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		522A5885255ACAC700DAF0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		522A5887255ACAC700DAF0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522A588E255ACC2200DAF0CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		522A588F255ACC2200DAF0CC /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		522A5892255ACD1E00DAF0CC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		522A5893255ACD1E00DAF0CC /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		523A20872569619200903D7A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		523A20882569619200903D7A /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		523A762A2563AA5400246FBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		523A762B2563AA5400246FBE /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		523A762E2563AC4400246FBE /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		523A762F2563AC4400246FBE /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		523B2DC9259C57D7006FD875 /* CameraRollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRollViewController.swift; sourceTree = "<group>"; };
+		523B2DCA259C57D7006FD875 /* CameraRollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraRollViewController.xib; sourceTree = "<group>"; };
+		523BA227259C8926006B9A46 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		523BA228259C8926006B9A46 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		523D98B3261F37FF004613FE /* FullImagePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImagePopUpViewController.swift; sourceTree = "<group>"; };
+		523D98B4261F37FF004613FE /* FullImagePopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullImagePopUpViewController.xib; sourceTree = "<group>"; };
+		523DE2F426232BA400F92141 /* ReceiptListByShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListByShopViewController.swift; sourceTree = "<group>"; };
+		523DE2F526232BA400F92141 /* ReceiptListByShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptListByShopViewController.xib; sourceTree = "<group>"; };
+		523E8338259075DD002D0608 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
+		523E8339259075DD002D0608 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
+		523F784F262AC10D00D9B842 /* FullImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewController.swift; sourceTree = "<group>"; };
+		523F7850262AC10D00D9B842 /* FullImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullImageViewController.xib; sourceTree = "<group>"; };
+		523F7853262AD40A00D9B842 /* SaveQRImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveQRImageViewController.swift; sourceTree = "<group>"; };
+		523F7854262AD40A00D9B842 /* SaveQRImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveQRImageViewController.xib; sourceTree = "<group>"; };
+		52433C462561726B00C949D3 /* cavoliniregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cavoliniregular.ttf; sourceTree = "<group>"; };
+		52433C472561726B00C949D3 /* cavolinibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cavolinibold.ttf; sourceTree = "<group>"; };
+		524472EC267D22BD00735F53 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		524472ED267D22BD00735F53 /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
+		524EF7C42622CAC500B9232F /* QRInfoDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRInfoDataModel.swift; sourceTree = "<group>"; };
+		52C78B8026063DD40030973A /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		52C78B8126063DD40030973A /* QRCodeScannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRCodeScannerViewController.xib; sourceTree = "<group>"; };
+		52CE837025CE778E008DC1E9 /* UserProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
+		52DB213D2620943800E03418 /* CameraRollTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRollTableViewCell.swift; sourceTree = "<group>"; };
+		52DB213E2620943800E03418 /* CameraRollTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraRollTableViewCell.xib; sourceTree = "<group>"; };
+		52DEBD252576770400725008 /* WebserviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceManager.swift; sourceTree = "<group>"; };
+		52DEBD272576771A00725008 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		52E30FC2255BE8AD00E915D3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		52E30FC6255BE97E00E915D3 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
+		52E8DB832647F77600FF41EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52EF2D8C2583955A00168431 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		52EF2D8D2583955A00168431 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		79BA27E622DA78B925EC18F1 /* Pods-Green Receipts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Green Receipts.debug.xcconfig"; path = "Target Support Files/Pods-Green Receipts/Pods-Green Receipts.debug.xcconfig"; sourceTree = "<group>"; };
+		8C72EE09EE4F42ECB9B3B95E /* Pods-Green Receipts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Green Receipts.release.xcconfig"; path = "Target Support Files/Pods-Green Receipts/Pods-Green Receipts.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		522A5873255ACAC300DAF0CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E15147A1244CF2A87B8214 /* Pods_Green_Receipts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18BAFEFDFCAA30AAD923DD54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3879C9817518C0E6C47EF0D4 /* Pods_Green_Receipts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		521A689C257F56F8007CEDA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				521A689D257F5770007CEDA4 /* UserLoginModel.swift */,
+				521A68A6257F8F7C007CEDA4 /* RegisterUserModel.swift */,
+				52CE837025CE778E008DC1E9 /* UserProfileModel.swift */,
+				5226BA4925D000F700D2CD2F /* UserBillModel.swift */,
+				5226BA4B25D009CA00D2CD2F /* UserLatestBillModel.swift */,
+				520D8272261EDE5B002CCF93 /* UserCameraUploadedBillModel.swift */,
+				524EF7C42622CAC500B9232F /* QRInfoDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		521A689F257F78BB007CEDA4 /* Third Party Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				521A68A1257F795C007CEDA4 /* MBProgressHUD.h */,
+				521A68A2257F795C007CEDA4 /* MBProgressHUD.m */,
+				521A68A0257F795C007CEDA4 /* Green Receipts-Bridging-Header.h */,
+			);
+			path = "Third Party Libraries";
+			sourceTree = "<group>";
+		};
+		522A586D255ACAC300DAF0CC = {
+			isa = PBXGroup;
+			children = (
+				522A5878255ACAC300DAF0CC /* Green Receipts */,
+				522A5877255ACAC300DAF0CC /* Products */,
+				777434F400CBD7F3B2A0289E /* Pods */,
+				18BAFEFDFCAA30AAD923DD54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		522A5877255ACAC300DAF0CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				522A5876255ACAC300DAF0CC /* Green Receipts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		522A5878255ACAC300DAF0CC /* Green Receipts */ = {
+			isa = PBXGroup;
+			children = (
+				522A5879255ACAC300DAF0CC /* AppDelegate.swift */,
+				52DEBD24257676B100725008 /* Webservices */,
+				521A689C257F56F8007CEDA4 /* Models */,
+				522A588D255ACBF500DAF0CC /* ViewControllers */,
+				523E833725907563002D0608 /* Custom Cells */,
+				52E30FC1255BE87300E915D3 /* CommonUtilities */,
+				521A689F257F78BB007CEDA4 /* Third Party Libraries */,
+				522A587F255ACAC300DAF0CC /* Main.storyboard */,
+				522A5882255ACAC700DAF0CC /* Assets.xcassets */,
+				522A5884255ACAC700DAF0CC /* LaunchScreen.storyboard */,
+				522A5887255ACAC700DAF0CC /* Info.plist */,
+				52E8DB832647F77600FF41EF /* GoogleService-Info.plist */,
+			);
+			path = "Green Receipts";
+			sourceTree = "<group>";
+		};
+		522A588D255ACBF500DAF0CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				523A762A2563AA5400246FBE /* BaseViewController.swift */,
+				523A762B2563AA5400246FBE /* BaseViewController.xib */,
+				522A588E255ACC2200DAF0CC /* HomeViewController.swift */,
+				522A588F255ACC2200DAF0CC /* HomeViewController.xib */,
+				523DE2F426232BA400F92141 /* ReceiptListByShopViewController.swift */,
+				523DE2F526232BA400F92141 /* ReceiptListByShopViewController.xib */,
+				52C78B8026063DD40030973A /* QRCodeScannerViewController.swift */,
+				52C78B8126063DD40030973A /* QRCodeScannerViewController.xib */,
+				523B2DC9259C57D7006FD875 /* CameraRollViewController.swift */,
+				523B2DCA259C57D7006FD875 /* CameraRollViewController.xib */,
+				522A5892255ACD1E00DAF0CC /* LoginViewController.swift */,
+				522A5893255ACD1E00DAF0CC /* LoginViewController.xib */,
+				523A762E2563AC4400246FBE /* ForgotPasswordViewController.swift */,
+				523A762F2563AC4400246FBE /* ForgotPasswordViewController.xib */,
+				524472EC267D22BD00735F53 /* ResetPasswordViewController.swift */,
+				524472ED267D22BD00735F53 /* ResetPasswordViewController.xib */,
+				523A20872569619200903D7A /* RegistrationViewController.swift */,
+				523A20882569619200903D7A /* RegistrationViewController.xib */,
+				5207452725825ABB00436BDF /* UserProfileViewController.swift */,
+				5207452825825ABB00436BDF /* UserProfileViewController.xib */,
+				52EF2D8C2583955A00168431 /* ChangePasswordViewController.swift */,
+				52EF2D8D2583955A00168431 /* ChangePasswordViewController.xib */,
+				523D98B3261F37FF004613FE /* FullImagePopUpViewController.swift */,
+				523D98B4261F37FF004613FE /* FullImagePopUpViewController.xib */,
+				523F784F262AC10D00D9B842 /* FullImageViewController.swift */,
+				523F7850262AC10D00D9B842 /* FullImageViewController.xib */,
+				523F7853262AD40A00D9B842 /* SaveQRImageViewController.swift */,
+				523F7854262AD40A00D9B842 /* SaveQRImageViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		523E833725907563002D0608 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				523E8338259075DD002D0608 /* LibraryCell.swift */,
+				523E8339259075DD002D0608 /* LibraryCell.xib */,
+				52DB213D2620943800E03418 /* CameraRollTableViewCell.swift */,
+				52DB213E2620943800E03418 /* CameraRollTableViewCell.xib */,
+				523BA227259C8926006B9A46 /* CategoryCollectionViewCell.swift */,
+				523BA228259C8926006B9A46 /* CategoryCollectionViewCell.xib */,
+				520D8274261EEDCB002CCF93 /* CameraUploadCollectionViewCell.swift */,
+				520D8275261EEDCB002CCF93 /* CameraUploadCollectionViewCell.xib */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		52433C452561723C00C949D3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				52433C472561726B00C949D3 /* cavolinibold.ttf */,
+				52433C462561726B00C949D3 /* cavoliniregular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		52DEBD24257676B100725008 /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				52DEBD252576770400725008 /* WebserviceManager.swift */,
+				52DEBD272576771A00725008 /* ServiceFactory.swift */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		52E30FC1255BE87300E915D3 /* CommonUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				52433C452561723C00C949D3 /* Fonts */,
+				52E30FC2255BE8AD00E915D3 /* Constants.swift */,
+				52E30FC6255BE97E00E915D3 /* CommonUtility.swift */,
+				5211341F2568F8E7006C6D6F /* CustomTextField.swift */,
+				521A68A4257F8298007CEDA4 /* UserDefaultsManager.swift */,
+			);
+			path = CommonUtilities;
+			sourceTree = "<group>";
+		};
+		777434F400CBD7F3B2A0289E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79BA27E622DA78B925EC18F1 /* Pods-Green Receipts.debug.xcconfig */,
+				8C72EE09EE4F42ECB9B3B95E /* Pods-Green Receipts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		522A5875255ACAC300DAF0CC /* Green Receipts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 522A588A255ACAC700DAF0CC /* Build configuration list for PBXNativeTarget "Green Receipts" */;
+			buildPhases = (
+				89C473FBD30D56C1E1FF6AEA /* [CP] Check Pods Manifest.lock */,
+				522A5872255ACAC300DAF0CC /* Sources */,
+				522A5873255ACAC300DAF0CC /* Frameworks */,
+				522A5874255ACAC300DAF0CC /* Resources */,
+				9C6579EA95F85EB8A6A21D75 /* [CP] Embed Pods Frameworks */,
+				459BFD1A52F7F1755BD0BE5F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Green Receipts";
+			productName = "Green Receipts";
+			productReference = 522A5876255ACAC300DAF0CC /* Green Receipts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		522A586E255ACAC300DAF0CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = MansurBagwan;
+				TargetAttributes = {
+					522A5875255ACAC300DAF0CC = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = 522A5871255ACAC300DAF0CC /* Build configuration list for PBXProject "Green Receipts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 522A586D255ACAC300DAF0CC;
+			productRefGroup = 522A5877255ACAC300DAF0CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				522A5875255ACAC300DAF0CC /* Green Receipts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		522A5874255ACAC300DAF0CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520D8277261EEDCB002CCF93 /* CameraUploadCollectionViewCell.xib in Resources */,
+				522A5895255ACD1E00DAF0CC /* LoginViewController.xib in Resources */,
+				5207452A25825ABB00436BDF /* UserProfileViewController.xib in Resources */,
+				523A762D2563AA5400246FBE /* BaseViewController.xib in Resources */,
+				522A5886255ACAC700DAF0CC /* LaunchScreen.storyboard in Resources */,
+				524472EF267D22BD00735F53 /* ResetPasswordViewController.xib in Resources */,
+				523A76312563AC4400246FBE /* ForgotPasswordViewController.xib in Resources */,
+				522A5883255ACAC700DAF0CC /* Assets.xcassets in Resources */,
+				52DB21402620943800E03418 /* CameraRollTableViewCell.xib in Resources */,
+				523BA22A259C8926006B9A46 /* CategoryCollectionViewCell.xib in Resources */,
+				523D98B6261F37FF004613FE /* FullImagePopUpViewController.xib in Resources */,
+				52C78B8326063DD40030973A /* QRCodeScannerViewController.xib in Resources */,
+				523A208A2569619200903D7A /* RegistrationViewController.xib in Resources */,
+				523F7856262AD40A00D9B842 /* SaveQRImageViewController.xib in Resources */,
+				52433C492561726B00C949D3 /* cavolinibold.ttf in Resources */,
+				523F7852262AC10D00D9B842 /* FullImageViewController.xib in Resources */,
+				523B2DCC259C57D7006FD875 /* CameraRollViewController.xib in Resources */,
+				523E833B259075DD002D0608 /* LibraryCell.xib in Resources */,
+				522A5881255ACAC300DAF0CC /* Main.storyboard in Resources */,
+				523DE2F726232BA400F92141 /* ReceiptListByShopViewController.xib in Resources */,
+				52E8DB842647F77600FF41EF /* GoogleService-Info.plist in Resources */,
+				52433C482561726B00C949D3 /* cavoliniregular.ttf in Resources */,
+				52EF2D8F2583955A00168431 /* ChangePasswordViewController.xib in Resources */,
+				522A5891255ACC2200DAF0CC /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		459BFD1A52F7F1755BD0BE5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Green Receipts/Pods-Green Receipts-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Green Receipts/Pods-Green Receipts-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Green Receipts/Pods-Green Receipts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89C473FBD30D56C1E1FF6AEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Green Receipts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C6579EA95F85EB8A6A21D75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Green Receipts/Pods-Green Receipts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Green Receipts/Pods-Green Receipts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Green Receipts/Pods-Green Receipts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		522A5872255ACAC300DAF0CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522A5894255ACD1E00DAF0CC /* LoginViewController.swift in Sources */,
+				521A68A7257F8F7C007CEDA4 /* RegisterUserModel.swift in Sources */,
+				523A76302563AC4400246FBE /* ForgotPasswordViewController.swift in Sources */,
+				524472EE267D22BD00735F53 /* ResetPasswordViewController.swift in Sources */,
+				522A587A255ACAC300DAF0CC /* AppDelegate.swift in Sources */,
+				523A20892569619200903D7A /* RegistrationViewController.swift in Sources */,
+				52DB213F2620943800E03418 /* CameraRollTableViewCell.swift in Sources */,
+				521A689E257F5770007CEDA4 /* UserLoginModel.swift in Sources */,
+				523F7851262AC10D00D9B842 /* FullImageViewController.swift in Sources */,
+				52DEBD282576771A00725008 /* ServiceFactory.swift in Sources */,
+				522A5890255ACC2200DAF0CC /* HomeViewController.swift in Sources */,
+				521134202568F8E7006C6D6F /* CustomTextField.swift in Sources */,
+				523E833A259075DD002D0608 /* LibraryCell.swift in Sources */,
+				5207452925825ABB00436BDF /* UserProfileViewController.swift in Sources */,
+				523B2DCB259C57D7006FD875 /* CameraRollViewController.swift in Sources */,
+				523F7855262AD40A00D9B842 /* SaveQRImageViewController.swift in Sources */,
+				520D8276261EEDCB002CCF93 /* CameraUploadCollectionViewCell.swift in Sources */,
+				520D8273261EDE5B002CCF93 /* UserCameraUploadedBillModel.swift in Sources */,
+				52DEBD262576770400725008 /* WebserviceManager.swift in Sources */,
+				521A68A3257F795C007CEDA4 /* MBProgressHUD.m in Sources */,
+				523D98B5261F37FF004613FE /* FullImagePopUpViewController.swift in Sources */,
+				52EF2D8E2583955A00168431 /* ChangePasswordViewController.swift in Sources */,
+				5226BA4C25D009CA00D2CD2F /* UserLatestBillModel.swift in Sources */,
+				521A68A5257F8298007CEDA4 /* UserDefaultsManager.swift in Sources */,
+				524EF7C52622CAC500B9232F /* QRInfoDataModel.swift in Sources */,
+				52C78B8226063DD40030973A /* QRCodeScannerViewController.swift in Sources */,
+				52CE837125CE778E008DC1E9 /* UserProfileModel.swift in Sources */,
+				523BA229259C8926006B9A46 /* CategoryCollectionViewCell.swift in Sources */,
+				52E30FC7255BE97E00E915D3 /* CommonUtility.swift in Sources */,
+				523DE2F626232BA400F92141 /* ReceiptListByShopViewController.swift in Sources */,
+				52E30FC3255BE8AD00E915D3 /* Constants.swift in Sources */,
+				523A762C2563AA5400246FBE /* BaseViewController.swift in Sources */,
+				5226BA4A25D000F700D2CD2F /* UserBillModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		522A587F255ACAC300DAF0CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				522A5880255ACAC300DAF0CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		522A5884255ACAC700DAF0CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				522A5885255ACAC700DAF0CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		522A5888255ACAC700DAF0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		522A5889255ACAC700DAF0CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		522A588B255ACAC700DAF0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79BA27E622DA78B925EC18F1 /* Pods-Green Receipts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8L68662QG3;
+				INFOPLIST_FILE = "Green Receipts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = co.greentill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GreenTill_Dev_Profile;
+				SWIFT_OBJC_BRIDGING_HEADER = "Green Receipts/Third Party Libraries/Green Receipts-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		522A588C255ACAC700DAF0CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C72EE09EE4F42ECB9B3B95E /* Pods-Green Receipts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8L68662QG3;
+				INFOPLIST_FILE = "Green Receipts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = co.greentill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GreenTill_Dist_Profile;
+				SWIFT_OBJC_BRIDGING_HEADER = "Green Receipts/Third Party Libraries/Green Receipts-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		522A5871255ACAC300DAF0CC /* Build configuration list for PBXProject "Green Receipts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522A5888255ACAC700DAF0CC /* Debug */,
+				522A5889255ACAC700DAF0CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		522A588A255ACAC700DAF0CC /* Build configuration list for PBXNativeTarget "Green Receipts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522A588B255ACAC700DAF0CC /* Debug */,
+				522A588C255ACAC700DAF0CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 522A586E255ACAC300DAF0CC /* Project object */;
+}
